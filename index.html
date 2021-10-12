@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="d-flex justify-content-center">
+        <div class="booking-container">
+          <ul
+            class="nav nav-tabs d-flex justify-content-center"
+            id="myTab"
+            role="tablist"
+          >
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link active"
+                id="flight-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#flight"
+                type="button"
+                role="tab"
+                aria-controls="flight"
+                aria-selected="true"
+              >
+                <i class="fas fa-plane-departure me-2"></i><span>Flight</span>
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="hotel-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#hotel"
+                type="button"
+                role="tab"
+                aria-controls="hotel"
+                aria-selected="false"
+              >
+                <i class="far fa-building me-2"></i><span>Hotel</span>
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="bus-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#bus"
+                type="button"
+                role="tab"
+                aria-controls="bus"
+                aria-selected="false"
+              >
+                <i class="fas fa-bus me-2"></i><span>Bus</span>
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="tour-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#tour"
+                type="button"
+                role="tab"
+                aria-controls="tour"
+                aria-selected="false"
+              >
+              <i class="fas fa-road me-2"></i></i><span>Tour</span>
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="visa-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#visa"
+                type="button"
+                role="tab"
+                aria-controls="visa"
+                aria-selected="false"
+              >
+                <i class="fab fa-cc-visa me-2"></i><span>Visa</span>
+              </button>
+            </li>
+          </ul>
+          <div class="tab-content-wraper">
+            <div class="tab-content" id="myTabContent">
+              <div
+                class="tab-pane fade show active"
+                id="flight"
+                role="tabpanel"
+                aria-labelledby="flight-tab"
+              >
+                <div class="radio-container">
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="inlineRadioOptions"
+                      id="inlineRadio1"
+                      value="option1"
+                    />
+                    <label class="form-check-label" for="inlineRadio1"
+                      >One Way</label
+                    >
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="inlineRadioOptions"
+                      id="inlineRadio2"
+                      value="option2"
+                    />
+                    <label class="form-check-label" for="inlineRadio2"
+                      >Two Way</label
+                    >
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between hotel-details">
+                  <div
+                    class="
+                      booking-details
+                      d-flex
+                      align-items-center
+                      justify-content-between
+                      airport
+                    "
+                  >
+                    <div class="">
+                      <h5>FROM</h5>
+                      <h4>Dhaka</h4>
+                      <p>Dhaka Airport</p>
+                    </div>
+                    <div class="">
+                      <h5>To</h5>
+                      <h4>Jessore</h4>
+                      <p>Jessore Airport</p>
+                    </div>
+                  </div>
+                  <div class="booking-details d-flex justify-content-between">
+                    <div class="">
+                      <h5>Journey Date</h5>
+                      <h4>20 Oct,21</h4>
+                      <p>Wednesday</p>
+                    </div>
+                    <div class="">
+                      <h5>Return Date</h5>
+                      <h4>22 Oct,21</h4>
+                      <p>Saturday</p>
+                    </div>
+                  </div>
+                  <div class="booking-details">
+                    <h5>Traveller Class</h5>
+                    <h4>5 Traveller</h4>
+                    <p>Economy</p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="hotel"
+                role="tabpanel"
+                aria-labelledby="hotel-tab"
+              >
+              <!-- hotel booking details start -->
+                <div class="d-flex justify-content-between">
+                  <div class="booking-details">
+                    <h5>CITY/HOTEL/RESORT/AREA</h5>
+                    <h4>Cox's Bazar</h4>
+                    <p>Bangladesh</p>
+                  </div>
+                  <div class="booking-details">
+                    <h5>CHECK IN</h5>
+                    <h4>13 Oct,21</h4>
+                    <p>Wednesday</p>
+                  </div>
+                  <div class="booking-details">
+                    <h5>CHECK OUT</h5>
+                    <h4>14 Oct,21</h4>
+                    <p>Thursday</p>
+                  </div>
+                 <div class="bookingWrapper booking-details">
+                  <div onclick="handleBooking()" id="roomsAndGuest">
+                    <h5>ROOMS & GUESTS</h5>
+                    <h4>2 Rooms, 10 Guests</h4>
+                    <p><span>6 Adults</span>, <span>4 Children</span></p>
+                  </div>
+                  <div id="bookingRooms">
+                    <div> <h4>Room 1</h4></div>
+                    <hr/>
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div>
+                          <h5>Adult</h5>
+                          <p>12 Years+</p>
+                        </div>
+                        <div>
+                          <i class="fas fa-minus-circle"></i><span>2</span><i class="fas fa-plus-circle"></i>
+                        </div>
+                    </div>
+                    <hr/>
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div>
+                          <h5>Adult</h5>
+                          <p>12 Years+</p>
+                        </div>
+                        <div>
+                          <i class="fas fa-minus-circle"></i><span>2</span><i class="fas fa-plus-circle"></i>
+                        </div>
+                    </div>
+                    <hr/>
+                    <div class="d-flex align-items-center justify-content-between pb-2">
+                        <div class="room-btn d-flex align-items-center justify-content-between">
+                          <i class="fas fa-plus-circle me-2"></i><div>Add Another Room</i></div>
+                        </div>
+                        <div class="done-btn">
+                          Done
+                        </div>
+                    </div>
+                  </div>
+                 </div>
+                </div>
+                  <!-- hotel booking details end -->
+              </div>
+              <div
+                class="tab-pane fade"
+                id="bus"
+                role="tabpanel"
+                aria-labelledby="bus-tab"
+              >
+                <div class="d-flex justify-content-between">
+                  <div class="booking-details">
+                    <h5>CITY/HOTEL/RESORT/AREA</h5>
+                    <h4>Cox's Bazar</h4>
+                    <p>Bangladesh</p>
+                  </div>
+                  <div class="booking-details">
+                    <h5>Return Date</h5>
+                    <h4>22 Oct,21</h4>
+                    <p>Saturday</p>
+                  </div>
+                  <div class="booking-details">
+                    <h5>Return Date</h5>
+                    <h4>22 Oct,21</h4>
+                    <p>Saturday</p>
+                  </div>
+                  <div class="booking-details">
+                    <h5>Return Date</h5>
+                    <h4>22 Oct,21</h4>
+                    <p>Saturday</p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="tour"
+                role="tabpanel"
+                aria-labelledby="tour-tab"
+              >
+                <div class="d-flex justify-content-between hotel-details">
+                  <div class="booking-details">
+                    <h5>LOCATION</h5>
+                    <h4 class="mb-4">Dhaka</h4>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="visa"
+                role="tabpanel"
+                aria-labelledby="visa-tab"
+              >
+                <div class="d-flex justify-content-between hotel-details">
+                  <div class="booking-details">
+                    <h5>VISA</h5>
+                    <h4 class="mb-4">Visa Details</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex justify-content-center">
+        <div class="search">Search</div>
+      </div>
+    </header>
+    <script src="js/script.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
