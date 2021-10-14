@@ -1,7 +1,9 @@
 header {
   background-image: url(../assets/header-bg.jpg);
-  padding: 160px 0;
-
+  a {
+    z-index: 9999;
+    text-decoration: none;
+  }
   .search {
     padding: 12px 40px;
     background-color: $primaryColor;
@@ -11,6 +13,7 @@ header {
     font-weight: 700;
     font-size: 16px;
     margin-top: -20px;
+    border: none;
     cursor: pointer;
     &:hover {
       background-color: darken($primaryColor, 5%);
@@ -80,7 +83,7 @@ header {
 }
 #bookingRooms {
   background-color: $bgWhite;
-  width: 380px;
+  width: 355px;
   z-index: 9999;
   border-radius: 5px;
   right: 0;
@@ -111,7 +114,7 @@ header {
   }
 
   i {
-    font-size: 20px;
+    font-size: 15px;
     color: $secondaryColor;
   }
 
@@ -127,4 +130,75 @@ header {
     font-size: 14px;
     font-weight: 500;
   }
+}
+
+.booking-section {
+  padding: 100px 0;
+}
+
+// navbar brand
+nav {
+  background-color: transparent;
+
+  .menu {
+    height: 80px;
+
+    #nav-bar-menu {
+      margin-right: 82px;
+      div {
+        font-size: 18px;
+        padding: 0 35px;
+        font-weight: 700;
+        line-height: 72px;
+      }
+    }
+  }
+  a {
+    text-decoration: none;
+    display: inline-block;
+    color: $secondaryColor;
+  }
+}
+
+.sign-in {
+  padding: 10px 40px;
+  background-color: $primaryColor;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  display: inline;
+}
+
+input {
+  border: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+select {
+  appearance: none;
+  border: none;
+  outline: none;
+}
+
+.nav-colored {
+  background-color: $bgWhite;
+  transition: all 0.5s;
+}
+.nav-transparent {
+  background-color: transparent;
+  transition: all 0.5s;
+}
+
+.nav-bar-menu {
+  display: none !important;
+  transition: all 0.5s;
+}
+
+#logo-color {
+  display: none;
 }
